@@ -77,7 +77,7 @@
 	}
 
 	function drawBall() {
-	  almond.src = '../img/little-almond.PNG';
+	  almond.src = '../img/little-almond.jpg';
 	  context.drawImage(almond, world.ball.x, world.ball.y, world.ball.height, world.ball.width);
 	}
 
