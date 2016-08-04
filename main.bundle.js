@@ -77,7 +77,7 @@
 	}
 
 	function drawBall() {
-	  almond.src = '../img/little-almond.jpg';
+	  almond.src = 'https://github.com/Casey1449/Game-Time/blob/gh-pages/img/little-almond.PNG';
 	  context.drawImage(almond, world.ball.x, world.ball.y, world.ball.height, world.ball.width);
 	}
 
