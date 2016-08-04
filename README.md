@@ -2,7 +2,7 @@
 
 Module 1 Final Project - Created by Casey Metz & Jeff Duke
 
-
+Play the game here! https://casey1449.github.io/Game-Time/
 
 ##Intro
 For our Game-Time project we chose to make our own version of a classic Breakout style game.  It is built purely in javascript.  Styled after a 50's cookbook theme.  The game allows the player to choose any of 10 different levels to play.  Clicking the 'Start Blanchin!' button gives the player a countdown timer before the almond is launched.  Gameplay continues until the player clears all the bricks or loses the almond 3 times.  At any time a player is able to change the level using the buttons in the lower left corner of the screen.  
