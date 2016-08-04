@@ -77,7 +77,7 @@
 	}
 
 	function drawBall() {
-	  almond.src = '../img/little-almond.jpg';
+	  almond.src = __webpack_require__(6);
 	  context.drawImage(almond, world.ball.x, world.ball.y, world.ball.height, world.ball.width);
 	}
 
@@ -570,6 +570,12 @@
 	var Levels = [['OOOOOOOOOOOO', '############', '############', 'OOOOOOOOOOOO', '############', 'OOOOOOOOOOOO', 'OOOOOOOOOOOO', 'OOOOOOOOOOOO'], ['############', 'OOOOOOOOOOOO', '#M#M#M#M#M#M', 'OOOOOOOOOOOO', 'M#M#M#M#M#M#', 'OOOOOOOOOOOO', '############', 'OOOOOOOOOOOO'], ['###M####M###', '##M######M##', '#M########M#', 'M##########M', '#M########M#', '##M######M##', '###M####M###', 'OOOOOOOOOOOO'], ['############', '#####OO#####', '#####OO#####', 'OOOOOOOOOOOO', 'OOOOOOOOOOOO', '#####OO#####', '#####OO#####', '############'], ['############', 'O##########O', 'OO########OO', 'OMO######OMO', 'OOOO####OOOO', 'OMOOO##OOOMO', 'OOOOOOOOOOOO', 'OOOMOOOOMOOO'], ['OOOOMOOMOOOO', 'OOO######MOO', 'OO#O#OO#OOOO', 'OOO######OOO', 'OOOO#OO#O#OO', 'OOOO#OO#O#OO', 'OOM######OOO', 'OOOOMOOMOOOO'], ['#M##OOOO##M#', '####OOOO####', '#M##OOOO##M#', 'OOOOOOOOOOOO', 'OOOOOOOOOOOO', '#M##OOOO##M#', '####OOOO####', '#M##OOOO##M#'], ['OOO###OOO###', '###OOO###OOO', 'OOO###OOO###', '###OOO###OOO', 'OOO###OOO###', '###OOO###OOO', 'OOO###OOO###', '###OOO###OOO'], ['####OOOOOOOO', '#####OOOOOOM', '######OOOOOO', '#######OOOOM', '########OOOO', '#########OOM', '##########OO', '#M#M#M#M#M##'], ['OOOOM##MOOOO', 'OMOOO##OOOMO', 'OOOOM##MOOOO', 'OMOOO##OOOMO', 'OOOOM##MOOOO', 'OMOOO##OOOMO', 'OOOOM##MOOOO', 'OMOOO##OOOMO'], ['MOMOMOMOMOMO', 'OMOMOMOMOMOM', 'MOMOMOMOMOMO', 'OMOMOMOMOMOM', 'MOMOMOMOMOMO', 'OMOMOMOMOMOM', 'MOMOMOMOMOMO', 'OMOMOMOMOMOM'], ['OOOOOOOOOOOO', 'OOOOOOOOOOOO', 'OOOOOOOOOOOO', 'OOOOOOOOOOOO', 'OOOOOOOOOOOO', 'OOOOOOOOOOOO', 'OOOOOOOOOOOO', 'OOOOOOOOOO#O'], ['OOOOOOOOOOOO', 'OOOOOOOOOOOO', 'OOOOOOOOOOOO', 'OOOOOOOOOOOO', 'OOOOOOOOOOOO', 'OOOOOOOOOOOO', 'OOOOOOOOOOOO', 'OOOOOOOOOO#O']];
 
 	module.exports = Levels;
+
+/***/ },
+/* 6 */
+/***/ function(module, exports) {
+
+	module.exports = "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAACXBIWXMAAAsTAAALEwEAmpwYAAACzElEQVQoz3XTSYhbdQDH8e///5a8vEzykpdZbK2FShe1KmVEsHYEl7qAoFiK4k0PWg8qVQ+VehYP3kQHcQTBgxctDEIVWsUeaqlaxK11bB21mZo4SV7Wt+WtnhSq9Hf/3L4/wRX2y4kldtz5FABnjy7uVC+eenHSu7Q/iZJKlkYN7eqdH4n/ovPH3mb7fc/ww/Lre0TzzPOR4zwYttslLfdZdxJiL2a2mpHY1ur/8LHTq4X6qZe/KHZWdrvumJKpsrYWMGMX6bQzVDXGqpcJhcFl+PR7h/YYne9Oar1zeTRWhWpk9LshZtnEGWTYVQPHTdEVgaeYKP/Ar946+Hj66+dHS3EHNc+EZhVoNUOq9RK93gRFlbhxhlR0kjQnyrS/JMCXS4ceDi589gHjPkVDR+g6g6ZPuSLx/QRNLZLmOarIMWWM6yXo9qahXGteLK9//clyHLgYpkrghXTaLqohSVKVwM8QugApqdcMxtEEaQhmd997Upnnt0XZ/X1+w2yJZBIwHAks26I/zMiRhHGKqUvmNtZwHA+paCQbbuDu5964RQ5b6zfXawbDoY80KpQsjUt/DrCsClGUMG3rZGrOH40uUSoYY1Lfdf87AHIySa8fBWCUC7juhL7jY1tF3NGQWlVDCEGvG1MtSMIsprTjDmfh0WcPAEiURCdM6LRiStUp9KkpRp6HVdXBMBm4MVu3mIyzhHDj7dHel96cvem6bQJAXjVXWlYMsKcNsiSkXCkidY1We0QcT1B1nWY/oj9zW/LAwde2rZ44kv24ciEHkJsWHnlXn7YZjD0Gg4CRF2MYOmW7SrPlEmoFhpvvaTz26odG4+fvG1vv2v9vVALg+OILR4KV4/vKIsPzfdQcUl1hoM0wt+uhpb1PHn7aOf8N9e23Xpay6DV+wt58I2c+ff9A89uPX0mGg2uCBKd27fy5hScO76tMVbtXet7fAUk8b2bcmyAAAAAASUVORK5CYII="
 
 /***/ }
 /******/ ]);
