@@ -44,7 +44,6 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	// var $ = require ('jquery');
 	const canvas = document.getElementById('arkannoyed-canvas');
 	const context = canvas.getContext('2d');
 	const World = __webpack_require__(1);
