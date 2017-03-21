@@ -4,10 +4,7 @@ Module 1 Final Project - Created by Casey Metz & Jeff Duke
 
 Play the game here! https://casey1449.github.io/Blanched-Almonoid/
 
-![](https://cloud.githubusercontent.com/assets/18562083/24128568/537b8694-0da2-11e7-934c-00a37ae018d7.png =300x){:width="300px"}
-
-<img src="https://cloud.githubusercontent.com/assets/18562083/24128568/537b8694-0da2-11e7-934c-00a37ae018d7.png" width="300" />
-
+<img src="https://cloud.githubusercontent.com/assets/18562083/24128568/537b8694-0da2-11e7-934c-00a37ae018d7.png" alt="screenshot of game in action" width="400" />
 
 ## Intro
 For our Game-Time project we chose to make our own version of a classic Breakout style game.  It is built purely in javascript.  Styled after a 50's cookbook theme.  The game allows the player to choose any of 10 different levels to play.  Clicking the 'Start Blanchin!' button gives the player a countdown timer before the almond is launched.  Gameplay continues until the player clears all the bricks or loses the almond 3 times.  At any time a player is able to change the level using the buttons in the lower left corner of the screen.  
@@ -21,7 +18,8 @@ The "blanched almond" theme is a tribute to our favorite CSS named color, "blanc
 Levels have been built in the levels.js file.  They are comprised of arrays of text characters that represent different types of bricks.  '#' for a normal 1 hit brick, 'O' for a placeholder brick that will show as empty space in the playfield and M for multi-hit bricks.  When a player selects a level, the array is flattened and joined into 1 long text string.  A for loop interprets the text characters and builds new bricks accordingly.  These bricks are placed into another array.  Each brick in the array has the same default X and Y coordinates.  The array is run through a pair of nested for loops to place them in the 12 x 8 grid in the playfield.  The playfield is then rendered on screen.  Another for loop constantly checks the bricks in play and removes them from the array, and the playfield, as soon as their status reaches 0.  Once there are no longer any bricks with a status > 0 in the playfield, the level is complete and the next level is loaded.
 
 Spoiler: Here's a sneak peek at all ten levels!
-![](http://g.recordit.co/ZQ7edXu02I.gif =300x)
+
+<img src="http://g.recordit.co/ZQ7edXu02I.gif" width="400" alt="gif of levels" />
 
 ## Collisions and physics
 There were some unique challenges to overcome when building this game.  One was to setup collision detection on the walls, the bricks and the paddle.  For the walls and the ceiling, one axis of the balls trajectory is inverted upon impact.  For the paddle, the ball is sent off in a pre-determined direction based on where it strikes the paddle.  If it strikes the outer 20% on either side, it is sent off in a 45deg trajectory from the side it struck.  If it strikes within the 20% - 40% zone on either side it is sent off in a 60 degree trajectory from the paddle.  If the ball strikes the center 20% it continues on the same path it came in on.  
